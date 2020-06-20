@@ -12,10 +12,11 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
- PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_ef63.mk
+
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/superior_ef63.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_ef63-user \
-    lineage_ef63-userdebug \
-    lineage_ef63-eng
+    superior_ef63-user \
+    superior_ef63-userdebug \
+    superior_ef63-eng
