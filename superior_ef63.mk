@@ -20,13 +20,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from ef63 device
 $(call inherit-product, device/pantech/ef63/ef63.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Superior stuff.
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/pantech/ef63/ef63-vendor.mk)
 
-PRODUCT_NAME := lineage_ef63
+PRODUCT_NAME := superior_ef63
 PRODUCT_DEVICE := ef63
 PRODUCT_MANUFACTURER := PANTECH
 PRODUCT_MODEL := VEGA IRON 2
@@ -41,3 +41,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="ef63-user 6.0.1 MHC19Q ZNH2KAS1KN release-keys" 
 
 BUILD_FINGERPRINT := pantech/ef63:6.0.1/MHC19Q/ZNH2KAS1KN:user/release-keys
+
+PRODUCT_PROPERTY_OVERRIDES += \
+     ro.superior.maintainer=Lonelystar
