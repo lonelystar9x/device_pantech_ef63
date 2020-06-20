@@ -25,10 +25,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lineage.build.vendor_security_patch=2016-09-01
 
-# Keylayouts
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/cr-tk-300k.kl:system/vendor/usr/keylayout/cr-tk-300k.kl 
-
 # Lights
 PRODUCT_PACKAGES += \
      android.hardware.light@2.0-service.ef63
