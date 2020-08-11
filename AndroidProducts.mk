@@ -14,9 +14,15 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_ef63.mk
-
+    $(LOCAL_DIR)/superior_ef63.mk\
+    $(LOCAL_DIR)/xtended_ef63.mk
+    
 COMMON_LUNCH_CHOICES := \
     superior_ef63-user \
     superior_ef63-userdebug \
     superior_ef63-eng
+    
+COMMON_LUNCH_CHOICES := \
+    xtended_ef63-user \
+    xtended_ef63-userdebug \
+    xtended_ef63-eng
